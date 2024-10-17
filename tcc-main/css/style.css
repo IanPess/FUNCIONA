@@ -15,7 +15,7 @@
 /*main*/
 
 main{
-    padding-top: 90px;
+       padding-top: 90px;
 }
 
 #container_main_principal{
@@ -93,6 +93,45 @@ main{
     display: flex;
     flex-direction: column;
 }
+#bloco {
+    position: absolute;
+    top: 100vh; /* Corrigido para iniciar dentro da visualização */
+    background-color: rgba(0, 0, 0, 0.37);
+    width: 100%;
+    height: 100vh; /* Altura automática para se ajustar ao conteúdo */
+    padding: 20px; /* Aumentado para melhor espaçamento interno */
+    display: flex;
+    flex-direction: row; /* Organiza o conteúdo em coluna */
+    align-items: baseline; /* Centraliza os itens */
+    justify-content: baseline; /* Centraliza os itens verticalmente */
+    box-sizing: border-box; /* Para considerar padding no tamanho total */
+}
+.grafico {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.37);
+    width: 50%;
+    height: 50vh; /* Altura automática para se ajustar ao conteúdo */
+    padding: 20px; /* Aumentado para melhor espaçamento interno */
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column; /* Organiza o conteúdo em coluna */
+    align-items: center; /* Centraliza os itens */
+    box-sizing: border-box; /* Para considerar padding no tamanho total */
+}
+canvas {
+    width: 100%; /* Para ocupar toda a largura do bloco */
+    height: 70%; /* Para ocupar 70% da altura do bloco */
+    margin-bottom: 20px; /* Espaço entre o gráfico e as informações */
+}
+
+/* Estilo adicional para visualização */
+
+#info_clima {
+    color: white; /* Cor do texto das informações climáticas */
+    text-align: center; /* Centraliza o texto */
+    display: none;
+}
+
 
 .section_dia{
     width: 100%;
